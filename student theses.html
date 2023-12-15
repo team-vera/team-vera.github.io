@@ -50,54 +50,163 @@
 										<h1>Student Theses</h1>
 									</header>
 
-									<p><span class="image right"><img /></span>
-										<h2>Test1</h2>
+									<p>
+										<h2>Wing Print: Automated Bat Re-Identification Based On Distinct Wing Membrane Patterns (2023)</h2>
 											<p>
 											<i>
-												Zuerl, Matthias; Dirauf, Richard; Koeferl, Franz; Steinlein, Nils; Sueskind,Jonas;
-												Zanca, Dario; Brehm, Ingrid; von Fersen, Lorenzo; Eskofier, Bjoern.
-												"PolarBearVidID: A Video-Based Re-Identification Benchmark Dataset for
-												Polar Bears." Animals 13.5 (2023): 801.
+
 											</i>
 											</p>
 
 											<p class="blockalign">
-												Beschreibung
+												Bats are essential to many ecosystems but hard to track individually. Traditional methods of
+												marking individuals like forearm bands are highly invasive, inefficient, and affect the animal’s
+												behavior. These issues could be solved by a re-identification (Re-ID) approach based on neural
+												networks. In recent years, convolutional neural networks (CNNs) have already achieved very
+												good results performing Re-ID in other animal species. A prerequisite is the presence of a unique
+												biometric feature. In bats, candidates are the visible blood vessels and elastin bundle patterns
+												inside and on the wing membranes, forming a potentially unique Wing Print. The external and
+												internal structure of the wings can be captured by a camera in front of a backlight. The aim of this
+												thesis was to test if a CNN-based machine learning model could successfully perform Re-ID on
+												bats, based on their wing visuals. We examined three different scenarios: Re-ID within closed
+												datasets, Re-ID of individuals across several datasets recorded on different nights, and prediction
+												of individuals in unknown data. In cooperation with Nuremberg Zoo which houses a population of
+												nectar-feeding bats, we developed a camera trap capable of capturing images of the bats’ wings
+												and recorded three datasets that were then used to train and test multiple instances of a ResNet-50.
+												Within the closed datasets, the model achieved Re-ID accuracies of 99.9 % (4 individuals), 99 %
+												(15 individuals), and 99.75 % (23 individuals). The Re-ID of four reappearing individuals across
+												all three datasets worked for 96.12 % of the input images. In predicting the number of individuals
+												in unknown data, the model achieved over 91.25 % congruence with the ground truth, confirming
+												that the Re-ID of bats based on their Wing Print is possible.
 											</p>
 
-											<ul class="actions">
-														<li><a href="https://doi.org/10.3390/ani13050801" class="button primary">Publication</a></li>
-														<li><a href="https://doi.org/10.5281/zenodo.7564529" class="button">Dataset</a></li>
-											</ul>
 									</p>
 
 									<hr class="major" />
 
-									<p><span class="image right"><img /></span>
-										<h2>Test2</h2>
+									<p>
+										<h2>Video-based Deep Learning Approaches for Animal Behavior Classification (2023)</h2>
 											<p>
 											<i>
-												Zuerl, Matthias; Stoll, Philip; Brehm, Ingrid; Raab, René; Zanca, Dario; Kabri,
-												Samira; Happold, Johanna; Nille, Heiko; Prechtel, Katharina; Wuensch, Sophie;
-												Krause, Marie; Seegerer, Stefan; von Fersen, Lorenzo; Eskofier, Bjoern.
-												"Automated video-based analysis framework for behavior monitoring of individual
-												animals in zoos using deep learning—A study on polar bears." Animals 12.6
-												(2022): 692.
+
 											</i>
 											</p>
 
 											<p class="blockalign">
-												Beschreibung
+												Studying animals through scientific observation, termed ethology, is fundamental to biological
+												research. Through this, researchers can unravel biological processes and understand evolutionary
+												relations. Furthermore, scientific observation is crucial in ensuring animal welfare and
+												conservation efforts in enclosures and the wild. Animal observation is usually conducted
+												manually, severely limiting the extent of such studies. With the recent success of deep learning
+												systems, these tasks could be automated, leading to scalable, real-time, cheap opportunities for
+												improving animal welfare. Currently, research on automating behavior detection is impeded, as
+												appropriate datasets are expensive to create. <br>
+												The contribution of this thesis is two-fold. First, a dataset containing video sequences of polar
+												bears, annotated with nine primary and 19 secondary behaviors, was created. On this and two
+												further datasets from the literature, one of mice and one of meerkats, four models are evaluated
+												for their classification performance. Each model focuses on different modalities of extracting
+												information from the video sequences. <br>
+												The results show that the dataset quality is more important than the actual choice of model.
+												Furthermore, the best results could be achieved when additionally incorporating optical flow,
+												although only by a slight margin. Overall, a mean F1 score of up to 0.89 and a mean accuracy of
+												up to 0.94 is achieved. Without making significant concessions concerning accuracy, this thesis
+												demonstrates that such systems can perform real-time analysis even on devices with restricted
+												computational resources.
 											</p>
 
-											<ul class="actions">
-														<li><a href="https://doi.org/10.3390/ani12060692" class="button primary">Publication</a></li>
-														<li><a href="https://doi.org/10.5281/zenodo.5910445" class="button">Dataset</a></li>
-											</ul>
 									</p>
 
+									<hr class="major" />
 
+									<p>
+										<h2>Video-based Re-Identification of Captive Polar Bears (2022)</h2>
+											<p>
+											<i>
 
+											</i>
+											</p>
+
+											<p class="blockalign">
+												A scientific observational study that analyses an animal’s behavior is a commonly used method in
+												animal behavioral research. Unfortunately, the process to gather data is a very time-consuming
+												task for biologists. Therefore, automating data acquisition with non-invasive monitoring methods
+												like video surveillance is an emerging research field. The main challenge is the identification
+												of individual animals in the recorded videos, which can be tackled by re-identification (Re-
+												ID) methods. The few existing research projects on animal Re-ID are limited to image-based
+												approaches that mostly use species-specific body features. Also, there are not many animal Re-ID
+												datasets and those that do exist are image-based and only from a few animal species. As a result,
+												the scope of this thesis is to identify polar bears using a suitable video-based Re-ID method
+												initially proposed for identifying persons. To accomplish this research goal, a video-based polar
+												bear Re-ID dataset with 618 sequences is created that includes eight polar bears recorded at four
+												zoos. The selected Re-ID approach called Global-Local Temporal Representation (GLTR) is
+												trained and tested on this dataset. The results show that the polar bears from the dataset can be
+												identified with a rank-1 accuracy of 81 % which is comparable to the performance GLTR achieves
+												on the person Motion Analysis and Re-ID Set (MARS). Additionally, the Re-ID method can also
+												identify new polar bears it was not trained on with a rank-1 accuracy of 71 %. These results
+												should encourage biologists and computer scientists to further automate the behavioral analysis of
+												animals.
+											</p>
+
+									</p>
+
+									<hr class="major" />
+
+									<p>
+										<h2>Long-Term Automated Behaviour Monitoring of Captive Polar Bears (2022)</h2>
+											<p>
+											<i>
+
+											</i>
+											</p>
+
+											<p class="blockalign">
+												One of the key responsibilities of any animal-keeping institution is to ensure the welfare
+												of their kept individuals. Therefore, indicators for poor animal welfare should be assessed
+												regularly and ideally monitored continuously. Although this may be possible with manual
+												observation methods on a small scale, it is very time-consuming for larger institutions like
+												zoos with hundreds of individuals. <br>
+												This thesis proposes an automated pipeline for analysing the behaviour of the two polar bears
+												in the Nuremberg Zoo based on their movement patterns. The focus is on the quantification
+												of the occurrence of stereotypical behaviour (SB) long-term, which can give indications
+												toward the animal’s wellness. The pipeline is divided into three stages, the detection and
+												identification stage, trajectory processing with a custom Particle Filter (PF) implementation,
+												and behaviour classification with frequency-based features. Every stage is evaluated in
+												detail on bounding-box-annotated images of the two polar bears, synthetic trajectory data
+												with augmented errors and expert-annotated temporal behaviour data. The detection and
+												identification stages reach a mean Intersection over Union (IoU) of 0.762 and an F1@0.5 of
+												0.80 and the PF for trajectory processing a Mean Abolute Error (MAE) of 0.672 m and an
+												IoU of 97.1 %. The behaviour recognition stage achieves a micro IoU of 0.778 and a micro
+												F1-score of 0.875. <br>
+												As a proof-of-concept for the processing time, the analysis of 477.8 h of recorded video data is
+												performed in ∼65.3 h. Compared to the approximated time of 477.8 h it would take a human
+												expert, the pipeline offers a speed-up of ∼730 % and also provides precise positions over
+												time, which has not been possible to this point.
+											</p>
+
+									</p>
+
+									<hr class="major" />
+
+									<p>
+										<h2>Unsupervised Polar Bear Re-Identification (2022)</h2>
+											<p>
+											<i>
+
+											</i>
+											</p>
+
+											<p class="blockalign">
+												The welfare of wild animals in zoos, such as polar bears, in an important topic. To understand
+												what factors lead to living conditions that are appropriate for a given species, biologists would
+												like to conduct observational studies over long periods of time. These are performed by hand
+												and are labor-intensive. It would be ideal to be able to automate the observation process.
+												Current approaches of doing so are based on deep learning techniques that require large
+												amounts of labeled data. We have data of this form from four different polar bear enclosures.
+												We present an alternative approach, based on ideas from Person Re-Identification, that reduces
+												the amount of data that has to be collected and annotated for new enclosures.
+											</p>
+
+									</p>
 
 
 
