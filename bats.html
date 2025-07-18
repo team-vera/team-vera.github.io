@@ -31,14 +31,26 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									<h3 class="major">The BatID Dataset</h3>
+									<h3 class="major">The In-Flight Experiment and Dataset</h3>
 									<p>
-										We create a video series dedicated to research and conservation. Our goal is to make our own scientific work accessible to everyone while also highlighting the projects of our partners. Whether it’s field reports, ongoing studies, or behind-the-scenes insights into conservation efforts – we aim to share the fascinating world of science in an engaging and understandable way.
+										The automated in-flight setup consists of three main components (see Figure below).
+										The bat is attracted to an artificial blossomm containing a photoelectric sensor, which triggers when the bat inserts its tongue to access the provided sugar water.
+										During the approach, the bat is recorded from above by a high-speed monochrome camera (238 frames per second), equipped with a varifocal (2.8–10 mm), infrared-corrected lens suitable for medium close range.
+										Simultaneously, the bat is illuminated from below by an infrared light source designed to provide evenly diffused illumination, resulting in a bright, uniform background.
+										We use infrared light with a wavelength of 850 nm, which is less disturbing to bats than visible light and therefore well-suited for behavioural observation and imaging.
+										A microcontroller coordinates all active components, transmitting timestamps and sequential identifiers for each approach to a connected computer via a serial interface.
+										The captured images are transferred to the same system.
+										For each approach, the system records 140 consecutive frames, typically covering five to seven complete wingbeat cycles.
 									</p>
 
-									<p>
-										We’re always on the lookout for exciting new projects to feature! If you’re working on a research or conservation initiative and would like to share your work, feel free to reach out – we’d love to hear from you.
-									</p>
+									<figure style="text-align: center; margin-top: 2em;">
+  <img src="images/Bats/InFlight.gif"
+       alt="Infrared footage of a bat approaching the artificial flower"
+       style="width: 100%; max-width: 800px; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.3);">
+  <figcaption style="margin-top: 1em; font-size: 1.1em; color: #ccc;">
+    In-Flight scanner for non-invasevly acquiring WingPrint images.
+  </figcaption>
+</figure>
 
 								</div>
 							</div>
