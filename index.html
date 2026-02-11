@@ -11,6 +11,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Custom nav icon (polar bear) styling to match Font Awesome icons -->
+		<style>
+			/* Place SVG exactly where the template's icon pseudo-element sits */
+			#nav a {
+				position: relative;
+			}
+
+			#nav a .nav-svg {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 1.25em;
+				height: 1.25em;
+				fill: currentColor;
+				pointer-events: none;
+			}
+
+			/* Disable Font Awesome pseudo icon for the custom SVG item */
+			#nav a.polarbear:before {
+				content: none !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,10 +43,47 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
+						<a href="#home" class="icon solid polarbear">
+							<span>Polar Bear</span>
+
+							<!-- Simple polar bear head silhouette (inherits currentColor like FA icons) -->
+							<svg class="nav-svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+								<!-- Ears -->
+								<circle cx="18" cy="18" r="7"></circle>
+								<circle cx="46" cy="18" r="7"></circle>
+
+								<!-- Head -->
+								<path d="M32 10
+									C22 10 14 18 14 28
+									v10
+									c0 10 8 18 18 18
+									s18-8 18-18
+									V28
+									C50 18 42 10 32 10
+									z"></path>
+
+								<!-- Snout / muzzle -->
+								<path d="M22 36
+									c0-6 5-10 10-10
+									s10 4 10 10
+									c0 7-6 12-10 12
+									s-10-5-10-12
+									z"></path>
+
+								<!-- Nose cutout (using background via evenodd) -->
+								<path fill="#00000000" d=""></path>
+								<path d="M32 31
+									c-2 0-4 1.5-4 3.5
+									c0 2.2 2 3.9 4 3.9
+									s4-1.7 4-3.9
+									c0-2-2-3.5-4-3.5
+									z"></path>
+							</svg>
+						</a>
+
+						<a href="#research" class="icon solid fa-flask"><span>Research</span></a>
+						<a href="#thesis" class="icon solid fa-graduation-cap"><span>Thesis</span></a>
+						<a href="#network" class="icon solid fa-network-wired"><span>Network</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -34,90 +95,67 @@
 									<h1>Jane Doe</h1>
 									<p>Senior Astral Projectionist</p>
 								</header>
-								<a href="#work" class="jumplink pic">
+								<a href="#research" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
 									<img src="images/me.jpg" alt="" />
 								</a>
 							</article>
 
-						<!-- Work -->
-							<article id="work" class="panel">
+						<!-- Research / Publications -->
+							<article id="research" class="panel">
 								<header>
-									<h2>Work</h2>
+									<h2>Research & Publications</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									Placeholder content. Add your publications, projects, talks, and links here.
 								</p>
 								<section>
 									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+										<div class="col-12">
+											<p>
+												You can add a list of papers, a BibTeX export, PDFs, or cards with links (e.g., Google Scholar, ORCID).
+											</p>
 										</div>
 									</div>
 								</section>
 							</article>
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
+						<!-- Student Thesis -->
+							<article id="thesis" class="panel">
 								<header>
-									<h2>Contact Me</h2>
+									<h2>Student Thesis</h2>
 								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
+								<p>
+									Placeholder content. Describe open thesis topics, requirements, and how to apply.
+								</p>
+								<section>
+									<div class="row">
+										<div class="col-12">
+											<p>
+												You can add: available topics, prerequisites, expected timeline, and contact details.
+											</p>
 										</div>
 									</div>
-								</form>
+								</section>
+							</article>
+
+						<!-- Network -->
+							<article id="network" class="panel">
+								<header>
+									<h2>Network</h2>
+								</header>
+								<p>
+									Placeholder content. Add collaborators, partner institutions, and community links here.
+								</p>
+								<section>
+									<div class="row">
+										<div class="col-12">
+											<p>
+												You can add logos, a list of collaborators, and links (e.g., lab page, GitHub, LinkedIn).
+											</p>
+										</div>
+									</div>
+								</section>
 							</article>
 
 					</div>
